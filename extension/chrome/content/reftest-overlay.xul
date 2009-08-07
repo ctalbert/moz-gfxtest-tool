@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://reftest/locale/gfxtest-strings.dtd">
+<overlay id="reftest-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script src="chrome://reftest/content/reftest-overlay.js"/>
+
+  <keyset>
+    <key id="open-gfx-test" key="&gfx-test-key;" oncommand="onGfxMenuCommand(event);"/>
+  </keyset>
+
+  <menupopup id="menu_ToolsPopup">
+    <menuitem key="open-gfx-test" id="gfx-test-menuentry" label="&gfx-menu-entry-label;"
+              insertafter="devToolsSeparator" oncommand="onGfxMenuCommand(event);"/>
+  </menupopup>
+</overlay>

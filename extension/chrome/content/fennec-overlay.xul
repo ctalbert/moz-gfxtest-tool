@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://reftest/skin/gfxtest-style.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://reftest/locale/gfxtest-strings.dtd">
+
+<overlay id="fenenc-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script src="chrome://reftest/content/reftest-overlay.js"/>
+
+  <vbox id="panel-controls">
+    <toolbarbutton id="tool-gfxtest" type "radio" group="1"
+                   class="panel-button button-image"
+                   insertbefore="tool-addons"
+                   oncommand="onGfxMenuCommand(event);"/>
+  </vbox>
+</overlay>
